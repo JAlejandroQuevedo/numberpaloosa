@@ -1,0 +1,42 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    label {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        height: 40px;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 50%;
+        border-radius: 5px;
+        border: 1px solid black;
+        outline: none;
+
+        &:focus {
+            border: 2px solid red;
+        }
+    }
+
+    button {
+        @extend input;
+        padding: 0px;
+        font-size: 20px;
+        background: none;
+        border: 1px solid black;
+        border-radius: 5px;
+
+        &:focus {
+            border: 2px solid aqua;
+        }
+
+        &:hover {
+            border: 2px solid black;
+        }
+    }
+}
