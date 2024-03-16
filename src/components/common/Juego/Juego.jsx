@@ -4,7 +4,7 @@ export const Juego = ({ sendAll, catchContent, showUserInfo, handleKeyDown, user
     return (
         <div className='juego'>
             <form onSubmit={sendAll} className='form'>
-                <label htmlFor="numberIn">Ingresa un numero</label>
+                <label htmlFor="numberIn">Ingresa un numero del 1 al 10</label>
                 <input
                     id='numberIn'
                     type='text'
